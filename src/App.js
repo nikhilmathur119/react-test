@@ -10,7 +10,7 @@ function App() {
       code
     };
     try{
-      const {data}=await axios.post("http://172.17.19.0:5000/run",payload)
+      const {data}=await axios.post("http://myapp-env-1.eba-z9zuveau.ap-south-1.elasticbeanstalk.com/run",payload)
       setOutput(data.output);
     }
     catch(err)
